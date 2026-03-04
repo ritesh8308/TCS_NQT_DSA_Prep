@@ -36,6 +36,7 @@ public class String_Compression {
     input = input.replace("[", "").replace("]", "").trim();
     String [] tokens = input.split("\\s*,\\s*");
 
+    // char [] cch = input.toCharArray();
     int n = tokens.length;
     char [] chars = new char[n];
     for(int i=0; i<n; i++) {

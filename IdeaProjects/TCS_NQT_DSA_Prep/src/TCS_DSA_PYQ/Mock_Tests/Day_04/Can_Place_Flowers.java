@@ -20,6 +20,27 @@ public class Can_Place_Flowers {
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
 
+        /***
+         * ip: 5 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0
+         * where n = number of flowers to plant = 5
+         * arr [] = [1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0]
+         *
+         * then code:
+         *
+         * public static void main(String [] args) {
+         *     Scanner sc = new Scanner(System.in);
+         *     int n = sc.nextInt();
+         *
+         *     String input = sc.nextLine();
+         *     String [] tokens = input.trim().split(" ");
+         *
+         *     int [] arr = new int[tokens.length];
+         *     for(int i=0; i<tokens.length; i++) {
+         *         arr[i] = Integer.parseInt(tokens[i]);
+         *     }
+         *
+         * }
+         * */
         System.out.println("Enter no. of samplings: ");
         int n = sc.nextInt();
         sc.nextLine();  // requires as we are taking input of "String" after "int"

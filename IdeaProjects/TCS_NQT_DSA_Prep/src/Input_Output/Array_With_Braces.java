@@ -12,7 +12,7 @@ public class Array_With_Braces {
             input = input.replace("[", "").replace("]", "").trim();
 
 // 2. Split using Regex: \\s*,\\s*
-            String[] parts = input.split("\\s*,\\s*");
+            String[] parts = input.trim().split("\\s*,\\s*");
 
             int[] nums = new int[parts.length];
             for (int i = 0; i < parts.length; i++) {
