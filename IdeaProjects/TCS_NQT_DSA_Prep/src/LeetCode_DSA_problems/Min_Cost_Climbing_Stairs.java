@@ -31,5 +31,6 @@ public class Min_Cost_Climbing_Stairs {
 
         int ans = minCost(cost);
         System.out.println(ans);
+        //System.out.println();
     }
 }
