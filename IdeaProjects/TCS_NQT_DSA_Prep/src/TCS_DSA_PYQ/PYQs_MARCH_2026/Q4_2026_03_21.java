@@ -21,6 +21,8 @@ public class Q4_2026_03_21 {
             if(maxW + a <= lim) {
                 maxW += a;
                 count++;
+            }   else{
+                break;
             }
         }
         return count;

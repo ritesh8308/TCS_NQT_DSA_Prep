@@ -21,7 +21,7 @@ public class Q3_2026_03_21 {
             System.out.println("Invalid Input");
         }   else{
             if(hr <= 2) {
-                System.out.println(100*2);
+                System.out.println(100*hr);
             }else if(hr <= 5) {
                 System.out.println((100*2) + (50*(hr - 2)));
             }   else{
