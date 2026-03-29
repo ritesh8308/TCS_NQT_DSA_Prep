@@ -11,11 +11,14 @@
  * Order matters: $(5, 15)$ is $515$, while $(15, 5)$ is $155$.
  * Range Check: $X <= \text{ConcatenatedValue} <= Y$.
  *
- * Sample Case (from your screen)
+ * Sample Case:
  * Inputs:
  * $N = 4$
  * $NUM = [5, 15, 1, 9]$
  * $X = 10, Y = 99
+ *
+ * Output: 9
+ *
  *
  * $Calculations:
  * $(5, 5) \rightarrow 55$ (Valid: $10 \le 55 \le 99$)
@@ -32,12 +35,11 @@ import java.util.*;
 
 public class Q3_25_03_2025 {
 
-
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int [] arr = new int[n];
 
+        int [] arr = new int[n];
         int count = 0;
         for(int i=0; i<n; i++) {
             arr[i] = sc.nextInt();
@@ -46,7 +48,18 @@ public class Q3_25_03_2025 {
         int x = sc.nextInt();
         int y = sc.nextInt();
 
-        for(int i=0; i<n; i++) {
+//        for(int i=0; i<n; i++) {
+//            for(int j=0; j<n; j++) {
+//                String t = String.valueOf(arr[i]) + arr[j];
+//                int sum = Integer.parseInt(t);
+//                if(x <= sum && sum <= y) {
+//                    count++;
+//                }
+//            }
+//        }
+
+        int i=n-1;
+        while(i >= 0) {
             for(int j=0; j<n; j++) {
                 String t = String.valueOf(arr[i]) + arr[j];
                 int sum = Integer.parseInt(t);
@@ -54,6 +67,7 @@ public class Q3_25_03_2025 {
                     count++;
                 }
             }
+            i--;
         }
 
         System.out.println(count);

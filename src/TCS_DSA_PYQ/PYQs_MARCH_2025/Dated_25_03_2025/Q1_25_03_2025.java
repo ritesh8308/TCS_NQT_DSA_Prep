@@ -18,7 +18,6 @@
 
 /**
  * Input:
- *
  * Total Income: 1000
  * Category: food
  * Expense: 200
@@ -62,7 +61,7 @@ public class Q1_25_03_2025 {
         while(true) {
             String category = sc.nextLine();
 
-            if(category.equals("done"))     break;
+            if(category.equals("done"))     break; // .equals() is used to compare real contains of strings
 
             int expense = sc.nextInt();
             sc.nextLine();
@@ -75,6 +74,7 @@ public class Q1_25_03_2025 {
         System.out.println(totalExpense);
         System.out.println(totalIncome - totalExpense);
 
+        // printing Final list:
         for(Map.Entry<String, Integer> entry:map.entrySet()) {
             System.out.println(entry.getKey() +" "+ entry.getValue());
         }

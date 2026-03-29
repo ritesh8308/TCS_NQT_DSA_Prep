@@ -14,16 +14,13 @@
  *
  * Sample Input/Output (Based on Logic)
  * Input: aabbc
- *
  * Analysis: a: 2, b: 2, c: 1.
  * First Non-Repeating: c
  * Most Repeated: a (appears first among those with frequency 2).
- *
  * Output: c a
  *
  * Input: aabb
- * Analysis: All characters repeat.
-
+ * Analysis: All characters repeat
  * Output: None a
  * */
 
