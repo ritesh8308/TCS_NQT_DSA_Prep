@@ -59,7 +59,7 @@ public class Q1_25_03_2025 {
         Map<String, Integer> map = new LinkedHashMap<>();
 
         while(true) {
-            String category = sc.nextLine();
+            String category = sc.nextLine();   // Use --> sc.next() -----> iff : Food: 250000
 
             if(category.equals("done"))     break; // .equals() is used to compare real contains of strings
 
