@@ -18,7 +18,7 @@
 package TCS_DSA_PYQ.PYQs_MARCH_2025.Dated_31_03_2025;
 import java.util.*;
 
-public class Q1_30_03_2025 {
+public class Q1_31_03_2025 {
 
     public static boolean isPrime(int n) {
         if(n<=1)    return false;

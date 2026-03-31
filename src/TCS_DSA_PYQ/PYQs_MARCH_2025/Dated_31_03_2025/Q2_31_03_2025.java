@@ -16,7 +16,7 @@
 package TCS_DSA_PYQ.PYQs_MARCH_2025.Dated_31_03_2025;
 import java.util.*;
 
-public class Q2_30_03_2025 {
+public class Q2_31_03_2025 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

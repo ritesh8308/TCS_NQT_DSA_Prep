@@ -72,7 +72,7 @@
 package TCS_DSA_PYQ.PYQs_MARCH_2025.Dated_31_03_2025;
 import java.util.*;
 
-public class Q3_30_03_2025 {
+public class Q3_31_03_2025 {
 
     public static boolean isSubsetSum(int[] arr, int n, int tSum) {
         if(tSum == 0)   return true;
